@@ -1,60 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>G. Manikandan | Aspiring SOC Analyst</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #0f172a;
-            color: white;
-        }
-        header {
-            background: #020617;
-            padding: 40px;
-            text-align: center;
-        }
-        header h1 {
-            color: #38bdf8;
-        }
-        header p {
-            font-size: 18px;
-        }
-        section {
-            padding: 40px;
-        }
-        h2 {
-            color: #38bdf8;
-            border-bottom: 2px solid #38bdf8;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            padding: 5px 0;
-        }
-        .project {
-            background: #020617;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
-        footer {
-            background: #020617;
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-        }
-        a {
-            color: #38bdf8;
-            text-decoration: none;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G. Manikandan | Aspiring SOC Analyst</title>
+
+<style>
+body {
+    background: black;
+    color: #00ff00;
+    font-family: "Courier New", monospace;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    border-bottom: 2px solid #00ff00;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 18px;
+}
+
+section {
+    padding: 40px;
+}
+
+h2 {
+    color: #00ff00;
+    border-bottom: 1px solid #00ff00;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li::before {
+    content: "> ";
+}
+
+.project {
+    border: 1px solid #00ff00;
+    padding: 15px;
+    margin-top: 15px;
+    background: rgba(0,255,0,0.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #00ff00;
+    font-size: 14px;
+}
+
+a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+.cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+</style>
 </head>
 
 <body>
@@ -62,14 +83,15 @@
 <header>
     <h1>G. Manikandan</h1>
     <p>Aspiring SOC Analyst | Linux & Networking Enthusiast</p>
+    <p>root@manikandan:~$ <span class="cursor">█</span></p>
 </header>
 
 <section>
     <h2>About Me</h2>
     <p>
-        I am an aspiring SOC Analyst with strong fundamentals in Linux, Networking, and Web Technologies.
-        I am passionate about cybersecurity, monitoring threats, analyzing vulnerabilities, and improving system security.
-        I am actively learning real-world security operations and blue team tools to start my career in a Security Operations Center role.
+        I am an aspiring SOC Analyst with strong fundamentals in Linux, networking, and web technologies.
+        Passionate about cybersecurity, monitoring threats, analyzing logs, and defending systems.
+        Currently building hands-on labs and blue team knowledge to enter SOC roles.
     </p>
 </section>
 
@@ -79,14 +101,14 @@
         <li>Linux Administration</li>
         <li>Networking Fundamentals (TCP/IP, DNS, HTTP, Ports)</li>
         <li>HTML & Web Basics</li>
-        <li>Cyber Security Basics</li>
+        <li>Cyber Security Fundamentals</li>
         <li>Virtual Machines (Kali Linux, Metasploitable)</li>
         <li>Basic Vulnerability Analysis</li>
     </ul>
 </section>
 
 <section>
-    <h2>Tools & Technologies</h2>
+    <h2>Tools</h2>
     <ul>
         <li>Kali Linux</li>
         <li>Nmap</li>
@@ -100,20 +122,15 @@
     <h2>Projects</h2>
 
     <div class="project">
-        <h3>Vulnerable Machine Exploitation Lab</h3>
-        <p>Set up Kali Linux and Metasploitable, scanned vulnerabilities using Nmap, and practiced basic exploitation techniques.</p>
+        <h3>Vulnerable Lab Setup</h3>
+        <p>Configured Kali Linux and Metasploitable, scanned with Nmap, tested vulnerabilities.</p>
     </div>
 
     <div class="project">
-        <h3>Personal Portfolio Website</h3>
-        <p>Created a static portfolio website using HTML and hosted using GitHub Pages.</p>
+        <h3>Hacker Portfolio Website</h3>
+        <p>Designed and deployed a hacker-themed portfolio using HTML and GitHub Pages.</p>
     </div>
 
-</section>
-
-<section>
-    <h2>Education</h2>
-    <p>Diploma / Degree - (Add your college name here)</p>
 </section>
 
 <section>
